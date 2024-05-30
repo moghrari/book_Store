@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section nav li a:hover {
+    color: #089da1;
+}
+
+section nav .social_icon i {
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover {
+    color: #089da1;
+    cursor: pointer;
+}
+
+section .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+section .main h1 {
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+}
+
+section .main h1 span {
+    color: #089da1;
+}
+
+section .main p {
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+}
+
+section .main .main_tag .main_btn {
+    background: #089da1;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .main .main_img img {
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+.form-container {
+    background-color: white;
+    padding: 3.125em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 0px 10px 0px rgba(0, 1, 1, 0.50);
+    width: 400px;
+    height: 550px;
+    margin-left: 15%;
+    margin-top: -600px;
+}
+
+h3 {
+    color: rgb(77, 75, 75);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+    margin-left: 15%;
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: #089da1;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 0.5em;
+    height: 45px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0.8em;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    margin-top: 12px;
+}
+
+select {
+    width: 100%;
+    margin-bottom: 1.25em;
+    height: 50px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 0.8em;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+    margin-top: 12px;
+    background: transparent;
+}
+
+.form-container-input:focus {
+    border: 1px solid #089da1;
+    outline: none;
+}
+
+.form-container--marketing {
+    display: flex;
+    margin-bottom: 1.25em;
+    align-items: center;
+}
+
+.form-container--marketing>input {
+    margin-right: 0.625em;
+}
+
+.form-container--marketing>label {
+    color: grey;
+}
+
+.btn {
+    width: 50%;
+    height: 35px;
+    padding: 0.625em;
+    border-radius: 5px;
+    color: white;
+    background-color: #089da1;
+    border: 1px dashed #089da1;
+    cursor: pointer;
+    margin-top: 25px;
+    margin-left: 25%;
+}
+
+.btn:hover {
+    color: #089da1;
+    background-color: white;
+    border: 1px dashed #089da1;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.img_sinup {
+    margin-left: 50%;
+    margin-top: -470px;
+}
+
+footer {
+    width: 100%;
+    background: #eaeaea;
+    margin-top: 120px;
+}
+
+footer .footer_main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag {
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p {
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer_main .tag h1 {
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main .tag a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i {
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i {
+    margin: 0 5px;
+}

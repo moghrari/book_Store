@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    background-image: url(image/bg.png);
+    background-size: cover;
+    background-position: center;
+}
+
+section nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section nav li a:hover {
+    color: #089da1;
+}
+
+section nav .social_icon i {
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover {
+    color: #089da1;
+    cursor: pointer;
+}
+
+section .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+}
+
+section .main h1 {
+    position: relative;
+    font-size: 55px;
+    top: 80px;
+    left: 25px;
+}
+
+section .main h1 span {
+    color: #089da1;
+}
+
+section .main p {
+    width: 650px;
+    text-align: justify;
+    line-height: 22px;
+    position: relative;
+    top: 125px;
+    left: 25px;
+}
+
+section .main .main_tag .main_btn {
+    background: #089da1;
+    padding: 10px 20px;
+    position: relative;
+    top: 200px;
+    left: 25px;
+    color: #fff;
+    text-decoration: none;
+}
+
+section .main .main_img img {
+    width: 780px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+
+.services {
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+}
+
+.services h1 {
+    font-size: 35px;
+    margin-left: 550px;
+}
+
+.services span {
+    color: #089da1;
+}
+
+.services .services_box {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.services .services_box .services_card {
+    text-align: center;
+    width: 310px;
+    height: auto;
+    box-shadow: 0 0 8px #089da1;
+    padding: 15px 10px;
+}
+
+.services .services_box .services_card i {
+    color: #089da1;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.services .services_box .services_card h3 {
+    margin-bottom: 10px;
+}
+
+.book-containtes-row {
+    margin-top: 250px;
+}
+
+.title {
+    margin-top: -80px;
+    margin-left: 200px;
+}
+
+h2 {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 30px;
+    position: relative;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-left: 450px;
+    color: #089da1;
+}
+
+.title p {
+    font-size: 25px;
+    margin-left: 300px;
+}
+
+.title span {
+    margin-left: 45px;
+}
+
+.card-group {
+    display: flex;
+    gap: 25px;
+    margin-left: 2px;
+    padding: 20px;
+}
+
+.card {
+    width: 325px;
+    height: 450px;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    transition: 0.5s;
+    border-radius: 5% 5%;
+}
+
+.card .layer {
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 75%;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.card .info {
+    position: absolute;
+    bottom: -50%;
+    padding: 15px;
+    opacity: 0;
+    transition: 0.5s bottom, 1.75s opacity;
+}
+
+.info p {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.info button {
+    background: #089da1;
+    border: double white;
+    padding: 8px 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
+.card:hover,
+.card:hover img,
+.card:hover layer {
+    transform: scale(1.1);
+}
+
+.card:hover>.layer {
+    opacity: 1;
+}
+
+.card:hover>.info {
+    bottom: 0;
+    opacity: 1;
+}
+
+.card-group:hover>.card:not(:hover) {
+    filter: blur(5px);
+}
+
+
+/*about*/
+
+.about {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about .about_image img {
+    width: 800px;
+}
+
+.about .about_tag h1 {
+    font-size: 50px;
+    position: relative;
+    bottom: 35px;
+}
+
+.about .about_tag p {
+    line-height: 22px;
+    width: 650px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.about .about_tag .about_btn {
+    padding: 10px 20px;
+    background: #089da1;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+}
+
+footer {
+    width: 100%;
+    background: #eaeaea;
+}
+
+footer .footer_main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag {
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p {
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer_main .tag h1 {
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main .tag a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i {
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i {
+    margin: 0 5px;
+}
+
+.Btn {
+    --black: #000000;
+    --ch-black: #141414;
+    --eer-black: #1b1b1b;
+    --night-rider: #2e2e2e;
+    --white: #ffffff;
+    --af-white: #f3f3f3;
+    --ch-white: #e1e1e1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+    background-color: var(--af-white);
+}
+
+
+/* plus sign */
+
+.sign {
+    width: 100%;
+    transition-duration: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sign svg {
+    width: 17px;
+}
+
+.sign svg path {
+    fill: var(--night-rider);
+}
+
+
+/* text */
+
+.text {
+    position: absolute;
+    right: 0%;
+    width: 0%;
+    opacity: 0;
+    color: var(--night-rider);
+    font-size: 1.2em;
+    font-weight: 600;
+    transition-duration: .3s;
+}
+
+
+/* hover effect on button width */
+
+.Btn:hover {
+    width: 125px;
+    border-radius: 5px;
+    transition-duration: .3s;
+}
+
+.Btn:hover .sign {
+    width: 30%;
+    transition-duration: .3s;
+    padding-left: 20px;
+}
+
+
+/* hover effect button's text */
+
+.Btn:hover .text {
+    opacity: 1;
+    width: 70%;
+    transition-duration: .3s;
+    padding-right: 10px;
+}
+
+
+/* button click effect*/
+
+.Btn:active {
+    transform: translate(2px, 2px);
+}
+
+.social_icon {
+    display: flex;
+}
+
+.book-containtes-row h1 {
+    margin-top: -150px;
+    text-align: center;
+    margin-left: 7%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-top: 55px;
+    margin-left: 150px;
+}
+
+.book {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+.book img {
+    width: 100%;
+    height: 350px;
+    cursor: pointer;
+}
+
+.book h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+/* Style for the average rating */
+
+
+/* Container for the book details */
+
+div.book-details {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+}
+
+
+/* Style for the book title */
+
+div.book-details h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+
+/* Style for the average rating */
+
+div.book-details .avg-rating {
+    font-size: 1.2em;
+    /* Adjust the size of the rating text */
+    color: #FFD700;
+    /* Gold color for the star */
+    margin-left: 5px;
+    /* Space between the label and the rating */
+}
+
+
+/* Style for the "View Details" link */
+
+.btn_view a {
+    display: inline-block;
+    margin-top: 10px;
+    /* Space above the link */
+    padding: 8px 12px;
+    /* Padding for better click area */
+    background-color: #007BFF;
+    /* Blue background */
+    color: #FFFFFF;
+    /* White text */
+    text-decoration: none;
+    /* Remove underline */
+    border-radius: 4px;
+    /* Rounded corners */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover effect */
+}
+
+div.book-details a:hover {
+    background-color: #0056b3;
+    /* Darker blue on hover */
+}

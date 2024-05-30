@@ -1,0 +1,154 @@
+.form {
+    background-color: white;
+    padding: 3.125em;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.75);
+    width: 450px;
+    height: 500px;
+    margin-left: 30%;
+    margin-top: 100px;
+    margin-left: 400px;
+}
+
+.add_product {
+    color: rgb(77, 75, 75);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: block;
+    font-weight: bold;
+    font-size: x-large;
+    margin-bottom: 0.5em;
+    margin-top: 15px;
+}
+
+.form--input {
+    width: 100%;
+    margin-bottom: 1.5em;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding: 1.8em;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+.form--input:focus {
+    border: 1px solid #089da1;
+    outline: none;
+}
+
+.form--marketing {
+    display: flex;
+    margin-bottom: 1.25em;
+    align-items: center;
+}
+
+.form--marketing>input {
+    margin-right: 0.625em;
+}
+
+.form--marketing>label {
+    color: grey;
+}
+
+.form--submit {
+    width: 50%;
+    padding: 0.625em;
+    border-radius: 5px;
+    color: white;
+    background-color: #089da1;
+    border: 1px dashed #089da1;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.form--submit:hover {
+    color: #639;
+    background-color: white;
+    border: 1px dashed #639;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 35px;
+}
+
+.show-products {
+    margin-left: 50px;
+}
+
+.show-products .box-container {
+    display: grid;
+    margin-top: 70px;
+    grid-template-columns: repeat(auto-fit, 25rem);
+    justify-content: center;
+    margin: -10 auto;
+    align-items: flex-start;
+}
+
+.show-products {
+    padding-top: 30px;
+}
+
+.show-products .box-container .box {
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: black;
+    background-color: white;
+}
+
+.show-products .box-container .box img {
+    height: 20rem;
+}
+
+.show-products .box-container .box .name {
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: black;
+}
+
+.show-products .box-container .box .price {
+    padding: 1rem 0;
+    font-size: 2.5rem;
+    color: red;
+}
+
+.edit-product-form {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    overflow-y: scroll;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1200;
+    width: 100%;
+}
+
+.edit-product-form form {
+    text-align: center;
+    border-radius: 0.5rem;
+    background-color: white;
+}
+
+.edit-product-form form img {
+    height: 25rem;
+    margin-bottom: 1rem;
+    margin-left: -15px;
+}
+
+.edit-product-form form .blog_tag {
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    border: var(--border);
+    border-radius: .5rem;
+    background-color: beige;
+    font-size: 1.8rem;
+    color: black;
+    width: 100%;
+}
